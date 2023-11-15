@@ -1,0 +1,49 @@
+---
+title: "Classification accuracy goals for diagnostic tests based on risk stratification"
+author:
+- Ty Nguyen and Gene Pennello
+- FDA Division of Imaging, Diagnostics, & Software Reliability
+---
+<style type="text/css">
+body{
+  font-size: 12pt;
+#  color: DarkRed;
+}
+</style>
+<br>
+
+#### App Guides 
+
+Step 1. Choose performance type: Standalone or Comparative Performance
+
+#### If Standalone is chosen, follow steps below: 
+
+Step 2. Choose a Goal: Rule-Out, Rule-In or Both
+
+Step 3. Choose a Prevalence level $p$, Rule-Out Risk $p_{0}$ and/or Rule-In Risk $p_{1}$
+
+Step 4. Input your data. 
+
+Your data contains counts of study subjects with test result T=t and disease status D=d,  for t,d=0,1. If you just want to check standard performance, use default data or leave boxes empty. 
+
+
+#### If Comparative is chosen, follow steps below: 
+
+Step 2. Pick up a hypothesis including Superiority, Non-inferiority in risk difference,Non-inferiority in relative risk
+
+Step 3. Choose a Goal: Rule-Out, Rule-In or Both
+
+Step 4. Choose a margin level for non-inferiority tests
+
+Step 5. Input your data. 
+
+Your data contains counts of study subjects with test result T=t, S=s and disease status D=d,  for t,s,d=0,1. If you don't have data, just leave it with default settings or leave boxes empty. 
+
+
+
+
+
+
+
+
+
