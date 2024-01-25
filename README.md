@@ -6,8 +6,12 @@ Unfortunately, performance goals (PGs) for classification accuracy are often cho
 A framework is needed for how to set clinically meaningful PGs for classification accuracy. Such a framework would improve conversations among stakeholders (Patients / FDA / Industry / Payers) on appropriate acceptance criteria for validating a diagnostic test for its intended use.
 
 Clinically meaningful PGs for classification accuracy may be determined based on desired risk stratification. DxGoals aims to establish performance goals (PGS) based on input risk stratification and perform data analysis to assess the test’s alignment with PGs. By utilizing input risk stratification, the results include thresholds for PGs in terms of likelihood ratio, accompanied by graphs that provide visual support for conclusions.
+# Code 
+Code to set up performance from input stratification and analyze data is available in code directory.
 # Link 
 https://fda-cdrh-osel-didsr-rst.shinyapps.io/DxGoals/ 
+# Citation 
+Gene Pennello (2021) Classification accuracy goals for diagnostic tests based on risk stratification, Biostatistics & Epidemiology, 5:2, 149-168, DOI: 10.1080/24709360.2021.1878406 
 # Disclaimer
 
 This software and documentation (the “Software”) were developed at the Food and Drug Administration (FDA) by employees of the Federal Government in the course of their official duties. Pursuant to Title 17, Section 105 of the United States Code, this work is not subject to copyright protection and is in the public domain. Permission is hereby granted, free of charge, to any person obtaining a copy of the Software, to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, or sell copies of the Software or derivatives, and to permit persons to whom the Software is furnished to do so. FDA assumes no responsibility whatsoever for use by other parties of the Software, its source code, documentation or compiled executables, and makes no guarantees, expressed or implied, about its quality, reliability, or any other characteristic. Further, use of this code in no way implies endorsement by the FDA or confers any advantage in regulatory decisions. Although this software can be redistributed and/or modified freely, we ask that any derivative works bear some notice that they are derived from it, and any modified versions bear some notice that they have been modified.
