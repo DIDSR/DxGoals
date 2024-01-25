@@ -1,5 +1,11 @@
-# DxGoals1
-DxGoals aims to establish performance goals (PGS) based on input risk stratification and perform data analysis to assess the test’s alignment with PGs. By utilizing input risk stratification, the results include thresholds for PGs in terms of likelihood ratio, accompanied by graphs that provide visual support for conclusions.
+# DxGoals
+Diagnostic tests classify the binary status of a target condition (e.g., absent, present). Classification accuracy measures include sensitivity (Se), specificity (Sp), positive likelihood ratio PLR = Se / (1 – Sp), negative likelihood ratio NLR = (1 – Se)/Sp, and receiver operating characteristic curve (ROC). Classification accuracy measures are popular because they do not depend on the prevalence (i.e., pre-test probability) of the target condition and thus for low prevalence conditions can be estimated without bias in a moderately-sized, well-conducted study enriched with subjects having the condition.
+
+Unfortunately, performance goals (PGs) for classification accuracy are often chosen with only a vague understanding of whether they confer that the test would be clinically useful in practice. Clinicians often think the PGs should be set by the statisticians. Statisticians think the PGs should be set by the clinicians!
+
+A framework is needed for how to set clinically meaningful PGs for classification accuracy. Such a framework would improve conversations among stakeholders (Patients / FDA / Industry / Payers) on appropriate acceptance criteria for validating a diagnostic test for its intended use.
+
+Clinically meaningful PGs for classification accuracy may be determined based on desired risk stratification. DxGoals aims to establish performance goals (PGS) based on input risk stratification and perform data analysis to assess the test’s alignment with PGs. By utilizing input risk stratification, the results include thresholds for PGs in terms of likelihood ratio, accompanied by graphs that provide visual support for conclusions.
 
 Disclaimer
 
