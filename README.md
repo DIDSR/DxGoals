@@ -13,7 +13,7 @@ https://fda-cdrh-osel-didsr-rst.shinyapps.io/DxGoals/
 # Citation 
  <a href="[https://www.w3schools.com/](https://www.tandfonline.com/doi/full/10.1080/24709360.2021.1878406)" target="_blank">Gene Pennello (2021) Classification accuracy goals for diagnostic tests based on risk stratification, Biostatistics & Epidemiology, 5:2, 149-168, DOI: 10.1080/24709360.2021.1878406!</a>
 
- <a href="https://www.w3schools.com/" target="_blank">Visit W3Schools!</a>
+ <a href="https://www.w3schools.com/" target="_blank">Gene Pennello (2021) Classification accuracy goals for diagnostic tests based on risk stratification, Biostatistics & Epidemiology, 5:2, 149-168!</a>
  
 # Disclaimer
 
