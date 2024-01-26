@@ -7,7 +7,7 @@ A framework is needed for how to set clinically meaningful PGs for classificatio
 
 Clinically meaningful PGs for classification accuracy may be determined based on desired risk stratification. DxGoals aims to establish performance goals (PGS) based on input risk stratification and perform data analysis to assess the test’s alignment with PGs. By utilizing input risk stratification, the results include thresholds for PGs in terms of likelihood ratio, accompanied by graphs that provide visual support for conclusions.
 # Code 
-Code to set up performance from input stratification and analyze data is available in code directory. Sample input stratification and dataset could be found at (Gene Pennello, 2021) in citation. 
+Code to set up performance goals from input stratification and analyze data is available in code directory. Examples and dataset could be found at (Gene Pennello, 2021) in citation. 
 # Link 
 https://fda-cdrh-osel-didsr-rst.shinyapps.io/DxGoals/ 
 # Citation 
