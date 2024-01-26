@@ -1,0 +1,56 @@
+---
+title: "DxGoals: Performance Goals for Diagnostic Test Classification Accuracy"
+author:
+- Ty Nguyen and Gene Pennello
+- FDA Division of Imaging, Diagnostics, & Software Reliability
+---
+<style type="text/css">
+body{
+  font-size: 12pt;
+#  color: DarkRed;
+}
+</style>
+<br>
+
+#### App Guides 
+
+**Step 1:** Choose performance type: Standalone or Comparative Performance
+
+**$\color{red}{\text{If Standalone is chosen, follow steps below:}}$**
+
+**Step 2:** Choose a Goal: Rule-Out, Rule-In or Both
+
+**Step 3:** Choose a Prevalence level $p$, Rule-Out Risk $cNPV^{*}$ and/or Rule-In Risk $PPV^{*}$
+
+**Step 4:** Input your data $X_{TD}$. 
+
+Your data contains counts of study subjects with test result T=t and disease status D=d,  for t,d=0,1. If you just want to check standard performance, use default data or leave boxes empty. 
+
+**Step 5:** Click "Get Results" button. 
+
+The output includes a likelihood ratio graph, the NLR and/or PLR threshold for selected performance goal translated from risk stratification, estimate of NLR and/or PLR from input data. Based on those estimates, a conclusion whether the test data meet the performance goal is drawn. 
+
+**$\color{red}{\text{If Comparative is chosen, follow steps below:}}$**
+
+
+**Step 2:** Pick up a hypothesis including Superiority, Non-inferiority in risk difference,Non-inferiority in relative risk
+
+**Step 3:** Choose a Goal: Rule-Out, Rule-In or Both
+
+**Step 4:** Choose a margin level for non-inferiority tests
+
+**Step 5:** Input your data $X_{TS}$ for diseases and non-diseased subjects. 
+
+Your data contains counts of study subjects with test result T=t, S=s and disease status D=d,  for t,s,d=0,1. If you don't have data, just leave it with default settings or leave boxes empty. 
+
+**Step 6:** Click "Get Results" button. 
+
+The output includes estimate of NLR and/or PLR of the new test and the comparator test.  Based on those estimates, a conclusion whether the new test is superior to the comparator test is drawn. 
+
+
+
+
+
+
+
+

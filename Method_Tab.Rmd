@@ -1,0 +1,83 @@
+---
+title: "DxGoals: Performance Goals for Diagnostic Test Classification Accuracy"
+author:
+- Ty Nguyen and Gene Pennello
+- FDA Division of Imaging, Diagnostics, & Software Reliability
+---
+<style type="text/css">
+body{
+  font-size: 12pt;
+#  color: DarkRed;
+}
+</style>
+<br>
+
+A detailed version of the method can be found at [(Gene Pennello, 2021)](https://www.tandfonline.com/doi/full/10.1080/24709360.2021.1878406).
+
+#### 1. Notation
+We use following notations in DxGoals.
+
+$D={0,1}$ indicate absence, presence of target condition
+
+$T={0,1}$ indicates negative or positive test result for target condition.
+
+$p=Pr⁡(D=1$) is prevalence (pre-test probability) of the target condition.
+
+$p_0=cNPV=Pr⁡(D=1│T=0)=1-NPV$ is one minus negative predictive value.
+
+$p_1=PPV=Pr⁡(D=1│T=1)$ is positive predictive value.
+
+$\tau_0=Pr⁡(T=1│D=0)=FPF=1-Sp$ is false positive fraction or one minus specificity.
+
+$\tau_1=Pr⁡(T=1│D=1)=TPF=Se$ is true positive fraction or sensitivity.
+
+$l_0=\frac{Pr⁡(T=1│D=0)}{Pr⁡(T=0│D=0)} =\frac{(1-τ_1)}{(1-τ_0 )}=\frac{1-Se}{Sp}$ is negative likelihood ratio. 
+
+$l_1=\frac{Pr⁡(T=1│D=1)}{Pr⁡(T=0│D=1)} =\frac{(τ_1)}{( τ_0 )}=\frac{Se}{1-Sp}$ is positive likelihood ratio.
+
+An asterisk (*) signifies a threshold, while a hat (^) indicates an estimate.
+
+
+
+#### 2. Basic Relations
+##### 2.1 Bayes Theorem
+
+$o_t=l_t\ o$, where $t=0,1$ and $o_t=\frac{p_t}{(1-p_t\ )}$=post- test odds,$\ o=\frac{p}{(1-p)}$= pre-test odds
+
+##### 2.2 Relations Between Test Positive Fractions and Likelihood Ratios
+
+$Sp=(l_1-1)/(l_1-l_0\ )$ 
+
+$Se=l_1\ \ (1-l_0)/(l_1-l_0\ )$
+
+
+##### 3. Standalone Studies of One Diagnostic Test. 
+
+The software translates user input of risk stratification to likelihood threshold for PGs. The translation diagram is expressed as  
+
+$(p,PPV^\ast\ ) \xrightarrow{translated} l_1^\ast$, (threshold for PLR).
+
+$(cNPV^\ast,p) \xrightarrow{translated} l_0^\ast$,  (threshold for NLR).
+
+Moreover, $(l_0^\ast, l_1^\ast) \xrightarrow{} (1-Sp^\ast, Se^\ast)$ using relation 2.2. 
+
+In addition, the software plots the standalone PGs $l_0^\ast,l_1^\ast, 1-Sp^\ast$, and $Se^\ast$ for $NLR, PLR, 1-Sp$, and $Se$ on the likelihood ratio graph [(Biggerstaff, 2000)](https://onlinelibrary.wiley.com/doi/abs/10.1002/(SICI)1097-0258(20000315)19:5%3C649::AID-SIM371%3E3.0.CO;2-H?casa_token=hBpAuCV5GAcAAAAA:Q7ooXn4MbkgyYWAbMW60UX-7iFhaiyQ2UCGwOO79cWs0ve5jsoGDzt2hN0tit8A4BalOQv0E30EyYlE) of the PLR and NLR lines.
+
+The PLR line is $Se=l_1^\ast\ (1-Sp)$. The NLR line is $Se=1-l_0^\ast+l_0^\ast\ (1 - Sp)$.
+
+The two lines intersect at $(1-Sp^\ast,Se^\ast\ )=(1-l_0^\ast)/(l_1^\ast-l_0^\ast\ )\ (1,l_1^\ast\ )$,
+which are the PGs for $1–Sp$ and $Se$.  
+The software also performs data analysis of standalone data, comparing the estimates and 95% confidence intervals for $Se, Sp, PLR$, and $NLR$ and against their PGs.
+
+##### 4. Comparative Studies of Two Diagnostic Test. 
+
+The software will analyze two data set of two tests one of which is called comparator and another is a new test. DxGoals will estimate NLR and PLR of two tests and their confidence intervals to determine whether the new test is superior to the comparator. 
+
+
+**References**
+
+1. [Pennello, Gene. "Classification accuracy goals for diagnostic tests based on risk stratification." Biostatistics & Epidemiology 5, no. 2 (2021): 149-168.](https://www.tandfonline.com/doi/abs/10.1080/24709360.2021.1878406)
+
+2.  [Biggerstaff, Brad J. "Comparing diagnostic tests: a simple graphic using likelihood ratios." Statistics in medicine 19, no. 5 (2000): 649-663.](https://onlinelibrary.wiley.com/doi/abs/10.1002/(SICI)1097-0258(20000315)19:5%3C649::AID-SIM371%3E3.0.CO;2-H?casa_token=hBpAuCV5GAcAAAAA:Q7ooXn4MbkgyYWAbMW60UX-7iFhaiyQ2UCGwOO79cWs0ve5jsoGDzt2hN0tit8A4BalOQv0E30EyYlE)
+
+
