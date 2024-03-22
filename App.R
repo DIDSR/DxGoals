@@ -765,8 +765,8 @@ server <- function(input, output, session) {
                                   polygon(x=c(0,1,0),y=c(1-l0_ci()[3],1,1),
                                           col = "pink", border = "pink",lty=1,lwd=3)
                                 lines(t0,t1(),type="l",lty=2,lwd=3)
-                                  legend(0.38,0.28,legend=c("Estimates & 95% CIs for TPF and FPF"),pch = 8,col = "red",lwd=4,cex=1.5,bty="n")
-                                  legend(0.38,0.18,legend="1-sided 97.5% confidence band for NLR line of test",fill = "pink",bty="n",cex=1.5)
+                                  legend(0.33,0.28,legend=c("Estimates & 95% CIs for TPF and FPF"),pch = 8,col = "red",lwd=4,cex=1.5,bty="n")
+                                  legend(0.33,0.18,legend="1-sided 97.5% confidence band for NLR line of test",fill = "pink",bty="n",cex=1.5)
                                   
                                   #         legend(0.28,0.28,legend=c("Point Estimate and 95% CI for TPF and for FPF"),pch = 8,col = "red",lwd=4,cex=1.5,bty="n")
                                   #          legend(0.28,0.18,legend="1-sided 97.5% pointwise confidence band on NLR line of test",fill = "pink",bty="n",cex=1.5)
@@ -795,8 +795,8 @@ server <- function(input, output, session) {
                                 text(t0[round(0.5*(k3()+Num_points+50))],0.85*t1()[round(0.5*(k3()+Num_points))],"I",cex=2)
                                 #                           text(0.68,0.25,"S: NLR goal for confirming absence of target condition",cex=1.5)
                                 #                           text(0.60,0.15,"I: Unsatisfactory to confirm absence",cex=1.5)
-                                text(0.40,0.41,substitute(paste(bold('S: '),"NLR goal for declaring target condition absence is met")),cex=1.5,bty="n",adj=0)
-                                text(0.40,0.31,substitute(paste(bold('I: '),"NLR goal for declaring target condition absence is not met")),cex=1.5,bty="n",adj=0)
+                                text(0.35,0.41,substitute(paste(bold('S: '),"(FPF,TPF) pairs confirming absence with test negative result")),cex=1.5,bty="n",adj=0)
+                                text(0.35,0.31,substitute(paste(bold('I: '),"(FPF,TPF) pairs not confirming absence with test negative result")),cex=1.5,bty="n",adj=0)
                                 abline(h=1,lwd=2)
                                 abline(v=1,lwd=2)
                                 
@@ -837,8 +837,8 @@ server <- function(input, output, session) {
                                code=3,angle=90,length = 0.1,col="red",lwd=2)
                         
                                   
-                            legend(0.38,0.28,legend=c("Estimates & 95% CIs for TPF and FPF"),pch = 8,col = "red",lwd=4,cex=1.5,bty="n")
-                            legend(0.38,0.18,legend="1-sided 97.5% confidence band for PLR line of the test",fill = "pink",bty="n",cex=1.5)
+                            legend(0.33,0.28,legend=c("Estimates & 95% CIs for TPF and FPF"),pch = 8,col = "red",lwd=4,cex=1.5,bty="n")
+                            legend(0.33,0.18,legend="1-sided 97.5% confidence band for PLR line of the test",fill = "pink",bty="n",cex=1.5)
                             
                           }
                           
@@ -854,8 +854,8 @@ server <- function(input, output, session) {
                           
                           text(t0[round(0.5*k1())],0.5*(t2()[round(0.5*k1())]+1),"S",cex=2)
                           text(t0[k1()],0.75*t2()[k1()],"I",cex=2)
-                          text(0.40,0.41,substitute(paste(bold('S: '),"PLR goal for declaring target condition presence is met")),cex=1.5,bty="n",adj=0)
-                          text(0.40,0.31,substitute(paste(bold('I: '),"PLR goal for declaring target condition presence is not met")),cex=1.5,bty="n",adj=0)
+                          text(0.35,0.41,substitute(paste(bold('S: '),"(FPF,TPF) pairs confirming presence with test positive result")),cex=1.5,bty="n",adj=0)
+                          text(0.35,0.31,substitute(paste(bold('I: '),"(FPF,TPF) pairs not confirming presence with test positive result")),cex=1.5,bty="n",adj=0)
 
                         
                           abline(h=1,lwd=2)
@@ -908,9 +908,9 @@ server <- function(input, output, session) {
                                 
                                 arrows(x0=max(1-Sp_ci()[3],0),y0=Se_ci()[1],x1=min(1,1-Sp_ci()[2]),y1=Se_ci()[1],
                                        code=3,angle=90,length = 0.1,col="red",lwd=2)
-                          legend(0.30,0.28,legend=c("Estimates & 95% CIs for TPF and FPF"),pch = 8,col = "red",lwd=4,cex=1.5,bty="n")
+                          legend(0.33,0.28,legend=c("Estimates & 95% CIs for TPF and FPF"),pch = 8,col = "red",lwd=4,cex=1.5,bty="n")
                           
-                          legend(0.30,0.18,legend="1-sided 97.5% confidence band on PLR & NLR lines of the test",fill = "pink",bty="n",cex=1.5)
+                          legend(0.33,0.18,legend="1-sided 97.5% confidence band on PLR & NLR lines of the test",fill = "pink",bty="n",cex=1.5)
                                 
                         }
                                 else{
@@ -944,11 +944,11 @@ server <- function(input, output, session) {
                                  text(t0[k2()+200],t1()[k2()],"I",cex=2)
                                  
                            #      "S+P: PLR goal for confirming Presence of target condition"                                 
-                                 text(0.32,0.61,substitute(paste(bold('S+P: '),"PLR goal for declaring target condition presence is met")),cex=1.5,bty="n",adj=0)
-                                 text(0.32,0.51,substitute(paste(bold('S+A: '),"NLR goal for declaring target condition absence is met")),cex=1.5,bty="n",adj=0)
-                                 text(0.32,0.41,substitute(paste(bold('I: '),"Neither PLR nor NLR goal is met")),cex=1.5,bty="n",adj=0)
+                                 text(0.35,0.61,substitute(paste(bold('S+P: '),"(FPF,TPF) pairs confirming presence with test positive result")),cex=1.5,bty="n",adj=0)
+                                 text(0.35,0.51,substitute(paste(bold('S+A: '),"(FPF,TPF) pairs confirming absence with test negative result")),cex=1.5,bty="n",adj=0)
+                                 text(0.35,0.41,substitute(paste(bold('I: '),"(FPF,TPF) pairs confirming neither absence nor presence")),cex=1.5,bty="n",adj=0)
                                  
-                                 legend(0.30,0.38,legend="TPF  and FPF goals are met",fill = "lightyellow",bty="n",cex=1.5,adj=0)
+                                 legend(0.33,0.38,legend="TPF  and FPF goals are met",fill = "lightyellow",bty="n",cex=1.5,adj=0)
                             
 
                        
